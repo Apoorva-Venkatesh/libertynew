@@ -1,0 +1,90 @@
+********************************************************************************
+product = WebSphere Application Server 18.0.0.4 (wlp-1.0.23.cl180420181121-0300)
+wlp.install.dir = /opt/ibm/wlp/
+server.config.dir = /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/
+java.home = /home/default/java/jre
+java.version = 1.8.0_191
+java.runtime = Java(TM) SE Runtime Environment (8.0.5.27 - pxa6480sr5fp27-20190104_01(SR5 FP27))
+os = Linux (4.4.0-141-generic; amd64) (en_US)
+process = 235@mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5
+********************************************************************************
+[1/18/19 20:40:27:778 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[1/18/19 20:40:27:834 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.4/lafiles/en.html
+[1/18/19 20:40:33:396 UTC] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 6.936 seconds
+[1/18/19 20:40:34:240 UTC] 00000028 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[1/18/19 20:40:55:021 UTC] 0000001d com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[1/18/19 20:40:56:680 UTC] 0000002a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv4) port 9080.
+[1/18/19 20:40:56:785 UTC] 0000001d com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[1/18/19 20:40:58:075 UTC] 0000001d com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[1/18/19 20:40:58:107 UTC] 0000001d com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[1/18/19 20:40:58:109 UTC] 0000001d com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[1/18/19 20:40:58:281 UTC] 00000023 com.ibm.ws.ssl.config.WSKeyStore                             I CWPKI0819I: The default keystore is not created because a password is not configured on the <keyStore id="defaultKeyStore"/> element, and the 'keystore_password' environment variable is not set. 
+[1/18/19 20:40:58:319 UTC] 0000002a com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   I CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
+[1/18/19 20:40:58:574 UTC] 0000001d ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[1/18/19 20:41:00:830 UTC] 0000001d com.ibm.ws.security.jwt.internal.ConsumerImpl                I CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
+[1/18/19 20:41:00:937 UTC] 0000001d com.ibm.ws.security.jwt.web.JwtEndpointServices              I CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
+[1/18/19 20:41:01:057 UTC] 0000002a com.ibm.ws.security.token.ltpa.internal.LTPAKeyInfoManager   A CWWKS4104A: LTPA keys created in 2.738 seconds. LTPA key file: /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/resources/security/ltpa.keys
+[1/18/19 20:41:01:065 UTC] 0000002a com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 2.753 seconds.
+[1/18/19 20:41:01:332 UTC] 0000001d com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtConfigImpl    I CWWKS5500I: The MicroProfile JWT configuration [defaultMpJwt] was successfully processed.
+[1/18/19 20:41:01:335 UTC] 0000001d com.ibm.ws.security.mp.jwt.impl.MicroProfileJwtServiceImpl   I CWWKS5500I: The MicroProfile JWT configuration [MicroProfileJwtService] was successfully processed.
+[1/18/19 20:41:01:493 UTC] 0000001d com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[1/18/19 20:41:03:506 UTC] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
+[1/18/19 20:41:03:509 UTC] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
+[1/18/19 20:41:03:510 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/jwt/
+[1/18/19 20:41:03:516 UTC] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: PrivateMicroProfileMetrics.
+[1/18/19 20:41:03:517 UTC] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module PrivateMicroProfileMetrics has been bound to default_host.
+[1/18/19 20:41:03:517 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/metrics/
+[1/18/19 20:41:03:519 UTC] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: ibm/api.
+[1/18/19 20:41:03:519 UTC] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module ibm/api has been bound to default_host.
+[1/18/19 20:41:03:519 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/ibm/api/
+[1/18/19 20:41:03:714 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application libertynew.
+[1/18/19 20:41:03:721 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application javametrics-dash.
+[1/18/19 20:41:04:005 UTC] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: health.
+[1/18/19 20:41:04:005 UTC] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module health has been bound to default_host.
+[1/18/19 20:41:04:005 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/health/
+[1/18/19 20:41:04:040 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application javametrics-rest.
+[1/18/19 20:41:04:648 UTC] 00000034 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jwt
+[1/18/19 20:41:04:651 UTC] 00000033 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/metrics
+[1/18/19 20:41:04:752 UTC] 00000034 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:04:887 UTC] 00000033 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:04:969 UTC] 00000033 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[1/18/19 20:41:05:647 UTC] 00000034 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/ibm/api
+[1/18/19 20:41:05:648 UTC] 00000034 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:05:755 UTC] 00000033 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [com.ibm.ws.microprofile.metrics.private] [/metrics] [PrivateMetricsRESTProxyServlet]: Initialization successful.
+[1/18/19 20:41:05:779 UTC] 00000029 org.jboss.weld.Version                                       I WELD-000900: 2.4.8 (Final)
+[1/18/19 20:41:06:889 UTC] 00000029 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: javametrics.web.
+[1/18/19 20:41:06:889 UTC] 00000029 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module javametrics.web has been bound to default_host.
+[1/18/19 20:41:06:889 UTC] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/javametrics-dash/
+[1/18/19 20:41:06:897 UTC] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application javametrics-dash started in 3.176 seconds.
+[1/18/19 20:41:06:951 UTC] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/health
+[1/18/19 20:41:06:951 UTC] 00000029 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:07:000 UTC] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: javametrics-api.
+[1/18/19 20:41:07:001 UTC] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module javametrics-api has been bound to default_host.
+[1/18/19 20:41:07:001 UTC] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/javametrics/
+[1/18/19 20:41:07:002 UTC] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application javametrics-rest started in 2.962 seconds.
+[1/18/19 20:41:07:323 UTC] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/javametrics-dash
+[1/18/19 20:41:07:323 UTC] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:07:517 UTC] 0000002b com.ibm.ws.wsoc.EndpointManager                              I CWWKH0046I: Adding a WebSocket ServerEndpoint with the following URI: /javametrics-socket
+[1/18/19 20:41:07:581 UTC] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/javametrics
+[1/18/19 20:41:07:581 UTC] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:08:126 UTC] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[1/18/19 20:41:10:221 UTC] 0000002a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: libertynew-1.0-SNAPSHOT.
+[1/18/19 20:41:10:222 UTC] 0000002a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module libertynew-1.0-SNAPSHOT has been bound to default_host.
+[1/18/19 20:41:10:223 UTC] 0000002a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://mc-libertynew-73aae220-1b60-11e9-aa7d-idc-f9f55f5d9-84sc5:9080/
+[1/18/19 20:41:10:232 UTC] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/
+[1/18/19 20:41:10:233 UTC] 00000029 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/18/19 20:41:10:247 UTC] 0000002a com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application libertynew started in 6.534 seconds.
+[1/18/19 20:41:10:288 UTC] 0000002b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/default/app/mc-target/liberty/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[1/18/19 20:41:10:467 UTC] 00000028 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [microProfile-1.2, jsp-2.3, managedBeans-1.0, mpFaultTolerance-1.0, servlet-3.1, ssl-1.0, jndi-1.0, mpHealth-1.0, appSecurity-2.0, jsonp-1.0, mpConfig-1.1, jaxrs-2.0, el-3.0, jaxrsClient-2.0, concurrent-1.0, jwt-1.0, mpMetrics-1.0, mpJwt-1.0, json-1.0, cdi-1.2, distributedMap-1.0, websocket-1.1].
+[1/18/19 20:41:10:468 UTC] 00000028 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 37.063 seconds.
+[1/18/19 20:41:10:468 UTC] 00000028 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[1/18/19 20:41:10:991 UTC] 0000002b .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] I Setting the server's publish address to be /
+[1/18/19 20:41:11:316 UTC] 0000002b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [libertynew] [/] [application.rest.JaxrsApplication]: Initialization successful.
+[1/18/19 20:41:11:371 UTC] 0000002b .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
+[1/18/19 20:41:14:456 UTC] 0000003b .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
+[1/18/19 20:42:34:455 UTC] 00000059 .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
+[1/18/19 20:44:44:477 UTC] 00000085 .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
+[1/18/19 20:47:04:504 UTC] 000000b8 .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
+[1/18/19 20:48:33:672 UTC] 000000d7 org.apache.cxf.jaxrs.utils.JAXRSUtils                        W No operation matching request path "/favicon.ico" is found, Relative Path: /favicon.ico, HTTP Method: GET, ContentType: */*, Accept: image/webp,image/apng,image/*,*/*;q=0.8,. Please enable FINE/TRACE log level for more details.
+[1/18/19 20:49:24:508 UTC] 000000e1 .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
+[1/18/19 20:52:04:526 UTC] 00000111 .ibm.ws.jaxrs.2.0.common:1.0.23.cl180420181121-0300(id=194)] W Both application.rest.RootEndpoint#getIndex and application.rest.RootEndpoint#listResources are equal candidates for handling the current request which can lead to unpredictable results
