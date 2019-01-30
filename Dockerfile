@@ -1,4 +1,4 @@
-FROM websphere-liberty:webProfile7
+FROM mycluster.icp:8500/websphere-liberty:webProfile7
 LABEL maintainer="IBM Java Engineering at IBM Cloud"
 COPY /target/liberty/wlp/usr/servers/defaultServer /config/
 COPY /target/liberty/wlp/usr/shared/resources /config/resources/
