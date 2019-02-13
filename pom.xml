@@ -363,6 +363,15 @@
                                 <configuration>
                                     <features>
                                         <acceptLicense>true</acceptLicense>
+					<feature>microprofile-1.2</feature>
+					<feature>mpMetrics-1.0</feature>
+					<feature>mpConfig-1.1</feature>
+					<feature>concurrent-1.0</feature>
+					<feature>mpFaultTolerance-1.0</feature>
+					<feature>servlet-3.0</feature>
+					<feature>jwt-1.0</feature>
+					<feature>mpJwt-1.0</feature>
+					<feature>mpHealth-1.0</feature> 
                                     </features>
                                     <outputDirectory>target/liberty-alt-output-dir</outputDirectory>
                                 </configuration>
