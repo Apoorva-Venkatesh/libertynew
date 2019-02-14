@@ -52,6 +52,12 @@
     </properties>
 
     <dependencies>
+         <dependency>
+            <groupId>io.openliberty.features</groupId>
+            <artifactId>jaxrs-2.1</artifactId>
+            <type>esa</type>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -326,50 +332,42 @@
             </activation>
             <build>
                 <plugins>
-                    <!-- Default enablement of liberty-maven plugin -->
-                    <plugin>
-                        <groupId>net.wasdev.wlp.maven.plugins</groupId>
-                        <artifactId>liberty-maven-plugin</artifactId>
-                        <version>2.1.1</version>
-                        <extensions>true</extensions>
+                    !-- Default enablement of liberty-maven plugin -->
+		<plugins>
+            <plugin>
+                <groupId>net.wasdev.wlp.maven.plugins</groupId>
+                <artifactId>liberty-maven-plugin</artifactId>
+                <version>2.5</version>
+                <executions>
+                    <execution>
+                        <id>install-server</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>install-server</goal>
+                        </goals>
                         <configuration>
-                            <looseApplication>false</looseApplication>
-                            <!--appsDirectory>apps</appsDirectory-->
                             <assemblyArtifact>
-                                <groupId>com.ibm.websphere.appserver.runtime</groupId>
-                                <artifactId>wlp-webProfile7</artifactId>
-                                <version>17.0.0.4</version>
+                                <groupId>io.openliberty</groupId>
+                                <artifactId>openliberty-kernel</artifactId>
+                                <version>18.0.0.2</version>
                                 <type>zip</type>
                             </assemblyArtifact>
-                            <configFile>${basedir}/src/main/liberty/config/server.xml</configFile>
-                            <serverEnv>${basedir}/src/main/liberty/config/server.env</serverEnv>
-                            <jvmOptionsFile>${basedir}/src/main/liberty/config/jvm.options</jvmOptionsFile>
-                            <packageFile>${package.file}</packageFile>
-                            <include>${packaging.type}</include>
-                            <bootstrapProperties>
-                                <default.http.port>${testServerHttpPort}</default.http.port>
-                                <default.https.port>${testServerHttpsPort}</default.https.port>
-                                <app.location>${project.artifactId}-${project.version}.war</app.location>
-                            </bootstrapProperties>
-                            <installAppPackages>project</installAppPackages>
                         </configuration>
-                        <executions>
-                            <execution>
-                                <id>install-feature</id>
-                                <phase>prepare-package</phase>
-                                <goals>
-                                  <goal>install-feature</goal>
-                                </goals>
-                                <configuration>
-                                    <features>
-                                        <acceptLicense>true</acceptLicense>
-					<from>${basedir}/wlp/</from>
-                                    </features>
-                                    <outputDirectory>target/liberty-alt-output-dir</outputDirectory>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
+                    </execution>
+                    <execution>
+                        <id>install-feature</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>install-feature</goal>
+                        </goals>
+                        <configuration>
+                            <features>
+                                <acceptLicense>true</acceptLicense>
+                            </features>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
                 </plugins>
             </build>
         </profile>
