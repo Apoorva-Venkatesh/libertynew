@@ -363,7 +363,7 @@
                                 <configuration>
                                     <features>
                                         <acceptLicense>true</acceptLicense>
-					<from>/wlp</from>
+					<from>${basedir}/wlp</from>
                                     </features>
                                     <outputDirectory>target/liberty-alt-output-dir</outputDirectory>
                                 </configuration>
