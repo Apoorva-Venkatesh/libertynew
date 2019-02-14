@@ -160,7 +160,7 @@
                         </goals>
                         <configuration>
                           <stripVersion>true</stripVersion>
-                          <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/dropins</outputDirectory>
+                          <outputDirectory>${basedir}/wlp/usr/servers/defaultServer/dropins</outputDirectory>
                           <includeArtifactIds>javametrics-dash</includeArtifactIds>
                       </configuration>
                     </execution>
@@ -172,7 +172,7 @@
                         </goals>
                         <configuration>
                           <stripVersion>true</stripVersion>
-                          <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/dropins</outputDirectory>
+                          <outputDirectory>${basedir}/wlp/usr/servers/defaultServer/dropins</outputDirectory>
                           <includeArtifactIds>javametrics-rest</includeArtifactIds>
                       </configuration>
                     </execution>
@@ -184,7 +184,7 @@
                         </goals>
                         <configuration>
                           <stripVersion>true</stripVersion>
-                          <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/resources/</outputDirectory>
+                          <outputDirectory>${basedir}/wlp/usr/servers/defaultServer/resources/</outputDirectory>
                           <includeArtifactIds>javametrics-agent</includeArtifactIds>
                       </configuration>
                     </execution>
@@ -195,7 +195,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                          <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/resources/asm</outputDirectory>
+                          <outputDirectory>${basedir}/wlp/usr/servers/defaultServer/resources/asm</outputDirectory>
                           <includeGroupIds>org.ow2.asm</includeGroupIds>
                           <includeArtifactIds>asm,asm-commons</includeArtifactIds>
                       </configuration>
@@ -394,7 +394,7 @@
                             <looseApplication>true</looseApplication>
                             <appsDirectory>apps</appsDirectory>
                             <installDirectory>/opt/ibm/wlp</installDirectory>
-                            <userDirectory>${project.build.directory}/liberty/wlp/usr</userDirectory>
+                            <userDirectory>${basedir}/wlp/usr</userDirectory>
                             <configFile>${basedir}/src/main/liberty/config/server.xml</configFile>
                             <serverEnv>${basedir}/src/main/liberty/config/server.env</serverEnv>
                             <jvmOptionsFile>${basedir}/src/main/liberty/config/jvm.options</jvmOptionsFile>

@@ -1,7 +1,7 @@
 FROM websphere-liberty:webProfile7
 LABEL maintainer="IBM Java Engineering at IBM Cloud"
 COPY  src/main/liberty/config/ /config/
-COPY /target/liberty/wlp/usr/shared/resources /config/resources/
+COPY  wlp/usr/shared/resources /config/resources/
 COPY /src/main/liberty/config/jvmbx.options /config/jvm.options
 COPY /wlp/ /config/wlp/
 # Grant write access to apps folder, this is to support old and new docker versions.
